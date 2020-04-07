@@ -1,0 +1,12 @@
+<h1>Patients</h1>
+
+<ul>
+<% @patients.each do |patient| %>
+<li>
+<label>Name:</label>
+<%= link_to patient.name, patient %>
+<label>Number of Appointments:</label>
+<%= patient.num_of_apps %>
+</li>
+<% end %>
+</ul>
